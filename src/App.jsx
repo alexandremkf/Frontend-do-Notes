@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
-import Footer from './services/Footer'
-import Note from './services/notes'
-import Notification from './services/Notification'
+import Footer from './components/Footer'
+import Note from './components/Note'
+import Notification from './components/Notification'
 import noteService from './services/notes'
 
 const App = () => {
@@ -51,7 +51,7 @@ const App = () => {
       })
   }
 
-  const handleLogin = event => {
+  const handleLogin = (event) => {
     event.preventDefault()
     console.log('logging in with', username, password)
   }
