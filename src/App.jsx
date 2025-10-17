@@ -57,7 +57,10 @@ const App = () => {
     event.preventDefault()
     
     try {
-      const user = await loginService.login({ username, password })
+      const user = await loginService.login({
+        username, password,
+      })
+
       setUser(user)
       setUsername('')
       setPassword('')
