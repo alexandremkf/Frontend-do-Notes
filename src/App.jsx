@@ -132,6 +132,8 @@ const App = () => {
       <h1>Notes</h1>
       <Notification message={errorMessage} />
 
+      {!user && loginForm()}
+
       {user && (
         <div>
           <p>{user.name} logged in</p>
